@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+import Cards from "./components/Cards";
+import Testimonials from "./components/Testimonials";
+import Hero from "./components/Hero";
+
+import { useState, useEffect } from "react";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+  const applyResponsive = () => {
+    if (window.innerWidth <= 986) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    applyResponsive();
+  }, []);
+
+  window.addEventListener("resize", applyResponsive);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar isMobile={isMobile} />
+      <Main isMobile={isMobile} />
+      <Hero isMobile={isMobile} />
+      <Cards isMobile={isMobile} />
+      <Testimonials isMobile={isMobile} />
+    </>
   );
 }
 
