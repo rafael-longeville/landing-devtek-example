@@ -8,7 +8,6 @@ import {
   GridItem,
   Image,
 } from "@chakra-ui/react";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Laptop2 from "../assets/laptop2.png";
 const Main = () => {
