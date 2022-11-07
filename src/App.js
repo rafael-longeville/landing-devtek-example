@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import Cards from "./components/Cards";
 import Testimonials from "./components/Testimonials";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 import { useState, useEffect } from "react";
 
@@ -29,6 +30,7 @@ function App() {
       <Hero isMobile={isMobile} />
       <Cards isMobile={isMobile} />
       <Testimonials isMobile={isMobile} />
+      <Footer isMobile={isMobile} />
     </>
   );
 }

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import Laptop2 from "../assets/laptop2.png";
 const Main = () => {
   return (
-    <Box mt="10vh" h="80vh">
+    <Box mt="10vh" h="80vh" id="#home">
       <Flex justify="center">
         <Grid templateColumns="1fr 1fr">
           <GridItem>
@@ -30,34 +30,13 @@ const Main = () => {
               <Box as={motion.div}>
                 <Flex /* align="center" */ direction="column">
                   <Box pr="1vw">
-                    <Text color="white" fontWeight="bold" fontSize="3vh">
-                      with fast and flexible solutions for{" "}
+                    <Text color="gray.400" fontWeight="bold" fontSize="3vh">
+                      with fast and flexible solutions for{" "}BTB and BTC companies
                     </Text>
                   </Box>
 
 
-                  <Box mt="0.5vh">
-                    <Text>BTB</Text>
-                    {/* <TypeAnimation
-                      sequence={[
-                        "BTB",
-                        1000,
-                        "BTC",
-                        1000,
-                        "BTC and SASS companies",
-                        2000,
-                      ]}
-                      wrapper="div"
-                      cursor={true}
-                      repeat={Infinity}
-                      style={{
-                        fontSize: "4vh",
-                        fontWeight: "bold",
-                        color: "#00df9a",
-                      }}
-                      speed={10}
-                    /> */}
-                  </Box>
+                  
                 </Flex>
               </Box>
               <Box pt="5vh">

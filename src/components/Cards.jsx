@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import React from "react";
 import {
   Box,
-  Center,
   Text,
   Stack,
   List,
@@ -13,12 +11,9 @@ import {
   Grid,
   GridItem,
   Flex,
-  Image,
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
-import Single from "../assets/single.png";
-import Double from "../assets/double.png";
-import Triple from "../assets/triple.png";
+
 
 const Cards = () => {
   return (

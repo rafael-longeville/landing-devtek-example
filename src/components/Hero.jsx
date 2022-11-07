@@ -8,7 +8,6 @@ import {
   Button,
   Image,
   Icon,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -63,7 +62,7 @@ export default function CallToActionWithVideo() {
                   bg="#00df9a"
                   _hover={{ bgColor: "#02A06F" }}
                 >
-                  Get started
+                  Book a call with our CEO{" "}
                 </Button>
               </Stack>
             </Stack>

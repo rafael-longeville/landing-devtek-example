@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import React from "react";
 import { Flex, Text, Box } from "@chakra-ui/react";
 
 const Navbar = () => {
@@ -12,20 +11,20 @@ const Navbar = () => {
         </Box>
         <Box w="30%">
           <Flex justify="space-around" align="center">
-            <a href="">
+            <a href="#home">
               {" "}
               <Box>
                 <Text fontSize="2vh">Home</Text>
               </Box>
             </a>
-            <a href="">
+            <a href="#cards">
               <Box>
                 <Text fontSize="2vh">Services</Text>
               </Box>
             </a>
-            <a href="">
+            <a href="#testimonials">
               <Box>
-                <Text fontSize="2vh">Pricing Example</Text>
+                <Text fontSize="2vh">Testimonials</Text>
               </Box>
             </a>
           </Flex>
