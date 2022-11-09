@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Cards from "./components/Cards";
@@ -7,7 +6,7 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
 import { useState, useEffect } from "react";
-
+import { useColorMode } from "@chakra-ui/react";
 function App() {
   const [isMobile, setIsMobile] = useState(false);
   const applyResponsive = () => {
@@ -23,6 +22,9 @@ function App() {
   }, []);
 
   window.addEventListener("resize", applyResponsive);
+
+  const { colorMode, toggleColorMode } = useColorMode('Dark');
+
   return (
     <>
       <Navbar isMobile={isMobile} />

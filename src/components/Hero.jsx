@@ -41,7 +41,7 @@ export default function CallToActionWithVideo() {
                 <Text
                   as={"span"}
                   fontSize={{ base: "xl", sm: "4xl", lg: "4xl" }}
-                  color="#00df9a"
+                  color="#576CC0"
                 >
                   with an eye-catching website
                 </Text>
@@ -59,7 +59,7 @@ export default function CallToActionWithVideo() {
                   size={"lg"}
                   fontWeight={"normal"}
                   px={6}
-                  bg="#00df9a"
+                  bg="#576CC0"
                   _hover={{ bgColor: "#02A06F" }}
                 >
                   Book a call with our CEO{" "}

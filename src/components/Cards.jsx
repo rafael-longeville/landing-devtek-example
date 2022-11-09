@@ -14,7 +14,6 @@ import {
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
-
 const Cards = () => {
   return (
     <>
@@ -42,10 +41,10 @@ const Cards = () => {
                   <Text
                     fontSize={"sm"}
                     fontWeight={500}
-                    bg={useColorModeValue("green.50", "green.900")}
+                    bg={"#576CC0"}
                     p={2}
                     px={3}
-                    color={"green.500"}
+                    color={"white"}
                     rounded={"full"}
                   >
                     Hobby
@@ -66,19 +65,19 @@ const Cards = () => {
                 >
                   <List spacing={3}>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       5.000 page views
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       50 automation executions
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       50 identified users
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       Limited features
                     </ListItem>
                   </List>
@@ -86,16 +85,13 @@ const Cards = () => {
                   <Button
                     mt={10}
                     w={"full"}
-                    bg={"green.400"}
+                    bg={"#576CC0"}
                     color={"white"}
                     rounded={"xl"}
-                    boxShadow={"0 5px 20px 0px rgb(72 187 120 / 43%)"}
                     _hover={{
-                      bg: "green.500",
+                      bgColor: '#395AD2'
                     }}
-                    _focus={{
-                      bg: "green.500",
-                    }}
+                    boxShadow={"0 5px 20px 0px rgb(58 85 196 / 43%)"}
                   >
                     Start your trial
                   </Button>
@@ -120,10 +116,10 @@ const Cards = () => {
                   <Text
                     fontSize={"sm"}
                     fontWeight={500}
-                    bg={useColorModeValue("green.50", "green.900")}
+                    bg={"#576CC0"}
                     p={2}
                     px={3}
-                    color={"green.500"}
+                    color={"white"}
                     rounded={"full"}
                   >
                     Pro
@@ -144,19 +140,19 @@ const Cards = () => {
                 >
                   <List spacing={3}>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       10.000 page views
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       500 automation executions
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       100 identified users
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       All features
                     </ListItem>
                   </List>
@@ -164,16 +160,13 @@ const Cards = () => {
                   <Button
                     mt={10}
                     w={"full"}
-                    bg={"green.400"}
+                    bg={"#576CC0"}
                     color={"white"}
                     rounded={"xl"}
-                    boxShadow={"0 5px 20px 0px rgb(72 187 120 / 43%)"}
                     _hover={{
-                      bg: "green.500",
+                      bgColor: '#395AD2'
                     }}
-                    _focus={{
-                      bg: "green.500",
-                    }}
+                    boxShadow={"0 5px 20px 0px rgb(58 85 196 / 43%)"}
                   >
                     Start your trial
                   </Button>
@@ -198,10 +191,10 @@ const Cards = () => {
                   <Text
                     fontSize={"sm"}
                     fontWeight={500}
-                    bg={useColorModeValue("green.50", "green.900")}
+                    bg={"#576CC0"}
                     p={2}
                     px={3}
-                    color={"green.500"}
+                    color={"white"}
                     rounded={"full"}
                   >
                     Team
@@ -222,19 +215,19 @@ const Cards = () => {
                 >
                   <List spacing={3}>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       100.000 page views
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       10.000 automation executions
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       500 identified users
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={CheckIcon} color="green.400" />
+                      <ListIcon as={CheckIcon} color="#576CC0" />
                       All features & Private coaching
                     </ListItem>
                   </List>
@@ -242,16 +235,13 @@ const Cards = () => {
                   <Button
                     mt={10}
                     w={"full"}
-                    bg={"green.400"}
+                    bg={"#576CC0"}
                     color={"white"}
                     rounded={"xl"}
-                    boxShadow={"0 5px 20px 0px rgb(72 187 120 / 43%)"}
                     _hover={{
-                      bg: "green.500",
+                      bgColor: '#395AD2'
                     }}
-                    _focus={{
-                      bg: "green.500",
-                    }}
+                    boxShadow={"0 5px 20px 0px rgb(58 85 196 / 43%)"}
                   >
                     Start your trial
                   </Button>

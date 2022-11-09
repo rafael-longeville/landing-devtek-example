@@ -2,13 +2,9 @@ import React from "react";
 import { Flex, Text, Box } from "@chakra-ui/react";
 
 const Navbar = () => {
-
   return (
     <>
-      <Flex justify="space-between" align="center" h="15vh" p="4vh">
-        <Box>
-          <Text color="#00df9a"fontSize="5vh">Your Company Name</Text>
-        </Box>
+      <Flex justify="center" align="center" h="15vh" p="4vh">
         <Box w="30%">
           <Flex justify="space-around" align="center">
             <a href="#home">
@@ -28,6 +24,11 @@ const Navbar = () => {
               </Box>
             </a>
           </Flex>
+        </Box>
+        <Box>
+          <Text color="#576CC0" fontSize="6.5vh" fontWeight="bold">
+            Your Company Name
+          </Text>
         </Box>
       </Flex>
     </>
