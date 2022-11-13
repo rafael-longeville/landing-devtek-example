@@ -17,7 +17,7 @@ import { CheckIcon } from "@chakra-ui/icons";
 const Cards = () => {
   return (
     <>
-      <Container maxW={"7xl"} pt="10vh" pb="10vh">
+      <Container maxW={"7xl"} pt="10vh" pb="10vh" id="services">
         <Grid
           templateColumns={{ base: null, md: null, lg: "1fr 1fr 1fr" }}
           templateRows={{
