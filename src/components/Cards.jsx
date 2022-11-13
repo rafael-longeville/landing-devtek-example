@@ -10,7 +10,6 @@ import {
   useColorModeValue,
   Grid,
   GridItem,
-  Flex,
   Container,
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";

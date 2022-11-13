@@ -29,7 +29,7 @@ const Navbar = () => {
             <GridItem align="center">
               <Flex justify="space-evenly" align="center" h="100%">
                 <Box>
-                  <a href="">
+                  <a>
                     <Text
                       _hover={{
                         textColor: "white",
@@ -42,7 +42,7 @@ const Navbar = () => {
                   </a>
                 </Box>
                 <Box>
-                  <a href="">
+                  <a>
                     <Text
                       _hover={{
                         textColor: "white",
