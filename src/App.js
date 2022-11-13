@@ -4,8 +4,10 @@ import Cards from "./components/Cards";
 import Testimonials from "./components/Testimonials";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import { Flex } from "@chakra-ui/react";
 
 import { useState, useEffect } from "react";
+
 function App() {
   const [isMobile, setIsMobile] = useState(false);
   const applyResponsive = () => {
@@ -22,15 +24,16 @@ function App() {
 
   window.addEventListener("resize", applyResponsive);
 
-
   return (
     <>
       <Navbar isMobile={isMobile} />
-      <Main isMobile={isMobile} />
-      <Hero isMobile={isMobile} />
-      <Cards isMobile={isMobile} />
-      <Testimonials isMobile={isMobile} />
-      <Footer isMobile={isMobile} />
+      <Flex justify="center" direction="column">
+        <Main isMobile={isMobile} />
+        <Hero isMobile={isMobile} />
+        <Cards isMobile={isMobile} />
+        <Testimonials isMobile={isMobile} />
+        <Footer isMobile={isMobile} />
+      </Flex>
     </>
   );
 }

@@ -13,14 +13,15 @@ import { motion } from "framer-motion";
 
 export default function CallToActionWithVideo() {
   return (
-    <Box bgColor="white" pt="10vh" pb="20vh">
-      <Container maxW={"7xl"}>
+    <Box bgColor="gray.700" pt="2vh" pb="20vh">
+      <Container maxW={"7xl"} >
         <Box
           as={motion.div}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, duration: 3 }}
           transition={{ delay: 3 }}
           viewport={{ once: true }}
+          
         >
           <Stack
             align={"center"}
@@ -34,7 +35,7 @@ export default function CallToActionWithVideo() {
                 fontWeight={600}
                 fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
               >
-                <Text as={"span"} position={"relative"} color="gray.700">
+                <Text as={"span"} position={"relative"}>
                   More leads,
                 </Text>
                 <br />
