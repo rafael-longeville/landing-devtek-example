@@ -14,7 +14,7 @@ const Main = () => {
         viewport={{ once: true }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5}}
         >
           <Box mb="5vh" mt={{ base: "5vh", lg: "15vh" }}>
             <Text
@@ -31,7 +31,7 @@ const Main = () => {
         viewport={{ once: true }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
         >
           <Box pt="2vh">
             <Text
@@ -73,7 +73,7 @@ const Main = () => {
           viewport={{ once: true }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
           >
             <Button
               bgColor="brand.primary"
