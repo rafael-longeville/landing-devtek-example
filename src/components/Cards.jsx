@@ -23,6 +23,7 @@ const Cards = () => {
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1}}
         transition={{ delay: 1, duration: 1 }}
+        viewport={{ once: true }}
       >
         <Container maxW={'7xl'} pt="10vh" pb="10vh" id="services">
           <Heading

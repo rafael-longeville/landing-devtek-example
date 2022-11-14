@@ -11,6 +11,7 @@ const Main = () => {
     >
       <Flex direction="column" justify="center">
         <motion.div
+        viewport={{ once: true }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -27,6 +28,7 @@ const Main = () => {
           </Box>
         </motion.div>
         <motion.div
+        viewport={{ once: true }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
@@ -68,9 +70,10 @@ const Main = () => {
 
         <Box pt={{ base: "10vh", md: "10vh", lg: "10vh" }} alignSelf="center">
           <motion.div
+          viewport={{ once: true }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
             <Button
               bgColor="brand.primary"

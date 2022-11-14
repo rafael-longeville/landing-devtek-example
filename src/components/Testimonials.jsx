@@ -84,16 +84,14 @@ export default function WithSpeechBubbles() {
   return (
     <Box bg={useColorModeValue('gray.100', 'gray.700')} id="testimonials">
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}
+        transition={{ delay: 0.2, duration: 1 }}
       >
         <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
           <Stack spacing={0} align={'center'}>
-            <Heading>Your clients speak</Heading>
-            <Text>
-              Expose your clients testimonials to build your authority
-            </Text>
+            <Heading align="center">Clients testimonial examples</Heading>
           </Stack>
           <Stack
             direction={{ base: 'column', md: 'row' }}

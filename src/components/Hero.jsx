@@ -8,7 +8,7 @@ import {
   Button,
   Image,
   Icon,
-  Link
+  Link,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
@@ -18,9 +18,10 @@ export default function CallToActionWithVideo() {
       <Container maxW={'7xl'}>
         <Box>
           <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
             <Stack
               align={'center'}
@@ -63,7 +64,10 @@ export default function CallToActionWithVideo() {
                   spacing={{ base: 4, sm: 6 }}
                   direction={{ base: 'column', sm: 'row' }}
                 >
-                  <Link href="https://calendly.com/devteksolutions/15min" isExternal>
+                  <Link
+                    href="https://calendly.com/devteksolutions/15min"
+                    isExternal
+                  >
                     <Button
                       borderRadius={5}
                       size={{ base: 'md', md: 'lg', lg: 'lg' }}
