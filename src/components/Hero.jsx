@@ -14,7 +14,7 @@ import { motion } from 'framer-motion'
 
 export default function CallToActionWithVideo() {
   return (
-    <Box bgColor="gray.700" pt="2vh" pb="10vh" id="hero">
+    <Box bgColor="gray.700" pt="2vh" pb={{base:"2vh", md: "10vh", lg:"10vh"}} id="hero">
       <Container maxW={'7xl'}>
         <Box>
           <motion.div
