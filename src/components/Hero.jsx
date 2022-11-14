@@ -8,96 +8,99 @@ import {
   Button,
   Image,
   Icon,
-} from "@chakra-ui/react";
-import { motion } from "framer-motion";
+  Link
+} from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
 export default function CallToActionWithVideo() {
   return (
     <Box bgColor="gray.700" pt="2vh" pb="10vh" id="hero">
-      <Container maxW={"7xl"}>
+      <Container maxW={'7xl'}>
         <Box>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 1 }}
+            transition={{ delay: 0.5, duration: 1 }}
           >
             <Stack
-              align={"center"}
+              align={'center'}
               spacing={{ base: 8, md: 10 }}
               py={{ base: 20, md: 28 }}
-              direction={{ base: "column", md: "row" }}
+              direction={{ base: 'column', md: 'row' }}
             >
               <Stack flex={1} spacing={{ base: 5, md: 10 }}>
                 <Heading
                   lineHeight={1.1}
                   fontWeight={600}
-                  fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
+                  fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}
                 >
-                  <Text as={"span"} position={"relative"}>
+                  <Text as={'span'} position={'relative'}>
                     More leads,
                   </Text>
                   <br />
                   <Text
-                    as={"span"}
-                    fontSize={{ base: "xl", sm: "4xl", lg: "4xl" }}
+                    as={'span'}
+                    fontSize={{ base: 'xl', sm: '4xl', lg: '4xl' }}
                     color="#576CC0"
                   >
                     with an eye-catching website
                   </Text>
                 </Heading>
                 <Text
-                  color={"gray.500"}
-                  fontSize={{ base: "xl", sm: "2xl", lg: "2xl" }}
+                  color={'gray.500'}
+                  fontSize={{ base: 'xl', sm: '2xl', lg: '2xl' }}
                 >
-                  Devtek Solutions can provide for you a{" "}
+                  Devtek Solutions can provide for you a{' '}
                   <Box as="em" color="white" fontStyle="normal">
                     custom website
                   </Box>
-                  , based on your needs, that will atract instantly{" "}
+                  , based on your needs, that will atract instantly{' '}
                   <Box as="em" color="white" fontStyle="normal">
                     more clients.
                   </Box>
                 </Text>
                 <Stack
                   spacing={{ base: 4, sm: 6 }}
-                  direction={{ base: "column", sm: "row" }}
+                  direction={{ base: 'column', sm: 'row' }}
                 >
-                  <Button
-                    borderRadius={5}
-                    size={{ base: "md", md: "lg", lg: "lg" }}
-                    fontWeight={"normal"}
-                    px={6}
-                    bg="brand.primary"
-                    _hover={{ bgColor: "brand.secondary" }}
-                  >
-                    Book a call with our CEO{" "}
-                  </Button>
+                  <Link href="https://calendly.com/devteksolutions/15min" isExternal>
+                    <Button
+                      borderRadius={5}
+                      size={{ base: 'md', md: 'lg', lg: 'lg' }}
+                      fontWeight={'normal'}
+                      px={6}
+                      bg="brand.primary"
+                      _hover={{ bgColor: 'brand.secondary' }}
+                    >
+                      Book a call with our CEO{' '}
+                    </Button>
+                  </Link>
                 </Stack>
               </Stack>
 
               <Flex
                 flex={1}
-                justify={"center"}
-                align={"center"}
-                position={"relative"}
-                w={"full"}
+                justify={'center'}
+                align={'center'}
+                position={'relative'}
+                w={'full'}
               >
                 <Box
-                  position={"relative"}
-                  height={"300px"}
-                  rounded={"2xl"}
-                  boxShadow={"2xl"}
-                  width={"full"}
-                  overflow={"hidden"}
+                  position={'relative'}
+                  height={'300px'}
+                  rounded={'2xl'}
+                  boxShadow={'2xl'}
+                  width={'full'}
+                  overflow={'hidden'}
                 >
                   <Image
-                    alt={"Hero Image"}
-                    fit={"cover"}
-                    align={"center"}
-                    w={"100%"}
-                    h={"100%"}
+                    alt={'Hero Image'}
+                    fit={'cover'}
+                    align={'center'}
+                    w={'100%'}
+                    h={'100%'}
                     src={
-                      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80'
                     }
                   />
                 </Box>
@@ -107,13 +110,13 @@ export default function CallToActionWithVideo() {
         </Box>
       </Container>
     </Box>
-  );
+  )
 }
 
 export const Blob = (props) => {
   return (
     <Icon
-      width={"100%"}
+      width={'100%'}
       viewBox="0 0 578 440"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -126,5 +129,5 @@ export const Blob = (props) => {
         fill="currentColor"
       />
     </Icon>
-  );
-};
+  )
+}

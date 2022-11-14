@@ -5,11 +5,8 @@ import {
   SimpleGrid,
   Text,
   Link,
-  VisuallyHidden,
-  chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const ListHeader = ({ children }) => {
   return (
@@ -19,29 +16,7 @@ const ListHeader = ({ children }) => {
   );
 };
 
-const SocialButton = ({ children, label, href }) => {
-  return (
-    <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-      rounded={"full"}
-      w={8}
-      h={8}
-      cursor={"pointer"}
-      as={"a"}
-      href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
-      _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
-      }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </chakra.button>
-  );
-};
+
 
 export default function LargeWithAppLinksAndSocial() {
   return (
@@ -56,7 +31,6 @@ export default function LargeWithAppLinksAndSocial() {
             <Link href={"#cards"}>About Us</Link>
             <Link href={"#cards"}>Blog</Link>
             <Link href={"#cards"}>Careers</Link>
-            <Link href={"#cards"}>Contact Us</Link>
           </Stack>
 
           <Stack align={"flex-start"}>
@@ -71,7 +45,6 @@ export default function LargeWithAppLinksAndSocial() {
             <Link href={"#cards"}>Cookies Policy</Link>
             <Link href={"#cards"}>Privacy Policy</Link>
             <Link href={"#cards"}>Terms of Service</Link>
-            <Link href={"#cards"}>Law Enforcement</Link>
           </Stack>
         </SimpleGrid>
       </Container>
@@ -90,18 +63,8 @@ export default function LargeWithAppLinksAndSocial() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
-              <FaInstagram />
-            </SocialButton>
-          </Stack>
+          <Text>© 2022 Devtek Solutions. All rights reserved</Text>
+          
         </Container>
       </Box>
     </Box>
