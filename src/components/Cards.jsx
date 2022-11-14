@@ -11,6 +11,7 @@ import {
   Grid,
   GridItem,
   Container,
+  Heading,
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
@@ -18,6 +19,16 @@ const Cards = () => {
   return (
     <>
       <Container maxW={"7xl"} pt="10vh" pb="10vh" id="services">
+        <Heading
+          as="h3"
+          fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
+          align="center"
+          color="gray.300"
+          pb="7vh"
+        >
+          Some products examples for your website
+        </Heading>
+
         <Grid
           templateColumns={{ base: null, md: null, lg: "1fr 1fr 1fr" }}
           templateRows={{
@@ -25,11 +36,12 @@ const Cards = () => {
             md: "0fr",
             lg: "0fr",
           }}
-          gap="10vw"
+          gap="5vw"
         >
           <GridItem>
             <Box
               maxW={"500px"}
+              maxH={"50vh"}
               w={"full"}
               bg={useColorModeValue("white", "gray.800")}
               boxShadow={"2xl"}
@@ -89,7 +101,7 @@ const Cards = () => {
                   color={"white"}
                   rounded={"xl"}
                   _hover={{
-                    bgColor: "#395AD2",
+                    bgColor: "brand.secondary",
                   }}
                   boxShadow={"0 5px 20px 0px rgb(58 85 196 / 43%)"}
                 >
@@ -101,6 +113,7 @@ const Cards = () => {
           <GridItem>
             <Box
               maxW={"500px"}
+              maxH={"50vh"}
               w={"full"}
               bg={useColorModeValue("white", "gray.800")}
               boxShadow={"2xl"}
@@ -160,7 +173,7 @@ const Cards = () => {
                   color={"white"}
                   rounded={"xl"}
                   _hover={{
-                    bgColor: "#395AD2",
+                    bgColor: "brand.secondary",
                   }}
                   boxShadow={"0 5px 20px 0px rgb(58 85 196 / 43%)"}
                 >
@@ -172,6 +185,7 @@ const Cards = () => {
           <GridItem>
             <Box
               maxW={"500px"}
+              maxH={"50vh"}
               w={"full"}
               bg={useColorModeValue("white", "gray.800")}
               boxShadow={"2xl"}
@@ -204,7 +218,7 @@ const Cards = () => {
                 </Stack>
               </Stack>
 
-              <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={10}>
+              <Box bg={useColorModeValue("gray.50", "gray.900")} px={5} py={10}>
                 <List spacing={3}>
                   <ListItem>
                     <ListIcon as={CheckIcon} color="#576CC0" />
@@ -231,7 +245,7 @@ const Cards = () => {
                   color={"white"}
                   rounded={"xl"}
                   _hover={{
-                    bgColor: "#395AD2",
+                    bgColor: "brand.secondary",
                   }}
                   boxShadow={"0 5px 20px 0px rgb(58 85 196 / 43%)"}
                 >

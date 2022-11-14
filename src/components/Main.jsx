@@ -7,7 +7,7 @@ const Main = () => {
     <Container
       maxW={"7xl"}
       pb={{ base: "5vh", md: "15vh", lg: "15vh" }}
-      h={{ base: "75vh", md: "65vh", lg: "95vh" }}
+      h={{ base: "90vh", md: "90vh", lg: "95vh" }}
     >
       <Flex direction="column" justify="center">
         <motion.div
@@ -19,8 +19,8 @@ const Main = () => {
             <Text
               align="center"
               fontWeight="bold"
-              fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
-              lineHeight="1.2"
+              fontSize={{ base: "4xl", sm: "5xl", lg: "6xl" }}
+              lineHeight={{ base: "1.5", md: "1.2", lg: "1.2" }}
             >
               Contact our agency for creating <br></br>your application
             </Text>
@@ -36,7 +36,7 @@ const Main = () => {
               color="gray.400"
               align="center"
               justify="center"
-              fontSize={{ base: "md", sm: "2xl", lg: "2xl" }}
+              fontSize={{ base: "md", sm: "3xl", lg: "2xl" }}
             >
               Devtek Solutions provides you the best service for your team for
               your company to start growing
@@ -49,7 +49,7 @@ const Main = () => {
                 <Text
                   color="gray.400"
                   align="center"
-                  fontSize={{ base: "md", sm: "2xl", lg: "2xl" }}
+                  fontSize={{ base: "md", sm: "3xl", lg: "2xl" }}
                 >
                   with{" "}
                   <Box as="em" color="white" fontStyle="normal">
@@ -66,7 +66,7 @@ const Main = () => {
           </Box>
         </motion.div>
 
-        <Box pt="5vh" alignSelf="center">
+        <Box pt={{ base: "10vh", md: "10vh", lg: "10vh" }} alignSelf="center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,15 +76,17 @@ const Main = () => {
               bgColor="brand.primary"
               p="5"
               borderRadius="5"
-              h="5vh"
+              h={{ base: "6vh", md: "7vh", lg: "5vh" }}
+              w={{ base: "80vw", md: "50vw", lg: "20vw" }}
+
               onClick={() => {
-                window.location.href = "#cards";
+                window.location.href = "#hero";
               }}
               _hover={{
                 bgColor: "brand.secondary",
               }}
             >
-              <Text>See our services examples</Text>{" "}
+              <Text fontSize={{base: "lg", md: "2xl", lg: "xl"}}>Start your journey now</Text>{" "}
             </Button>
           </motion.div>{" "}
         </Box>
