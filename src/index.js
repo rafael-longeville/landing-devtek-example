@@ -6,6 +6,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+  
 const theme = extendTheme({
   fonts: {
     heading: `'Inter', sans-serif`,
@@ -14,13 +15,14 @@ const theme = extendTheme({
   colors: {
     brand: {
       primary: "#576CC0",
-      secondary: "#435cbf"
+      secondary: "#435cbf",
     },
   },
 });
 
 root.render(
   <React.StrictMode>
+    {localStorage.setItem('chakra-ui-color-mode', 'dark')}
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
