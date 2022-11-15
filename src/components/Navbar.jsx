@@ -1,16 +1,9 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -20,20 +13,26 @@ import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
 
 import Logo from "../assets/DevTekLogo.webp";
 
-const Links = ["Services", "Book a call", "Testimonials"];
+const Links = [
+  { name: "Services", href: "#services" },
+  { name: "Book a call", href: "#hero" },
+  { name: "Testimonials", href: "#testimonials" },
+];
 
-const NavLink = ({ children }) => (
+const NavLink = ({ children, isOpen, onClose, onOpen }) => (
   <Link
     px={2}
     py={1}
     rounded={"md"}
+    color="gray.300"
     _hover={{
       textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
+      color: "white",
     }}
-    href={"#"}
+    href={children.href}
+    onClick={isOpen ? onClose : onOpen}
   >
-    {children}
+    {children.name}
   </Link>
 );
 
@@ -51,8 +50,12 @@ export default function Navbar() {
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack alignItems={"center"} w="90%" justifyContent={"space-between"}>
-            <Box pl={{base: "5vw", md: null, lg: null}}>
+          <HStack
+            alignItems={"center"}
+            w="90%"
+            justifyContent={"space-between"}
+          >
+            <Box pl={{ base: "5vw", md: null, lg: null }}>
               <Image
                 src={Logo}
                 h={{ base: "5vh" }}
@@ -60,7 +63,6 @@ export default function Navbar() {
               ></Image>
             </Box>
             <HStack
-            
               as={"nav"}
               spacing={4}
               display={{ base: "none", md: "flex" }}
@@ -72,15 +74,22 @@ export default function Navbar() {
           </HStack>
         </Flex>
 
-        {isOpen ? (
+        {isOpen && (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink
+                  key={link}
+                  isOpen={isOpen}
+                  onClose={onClose}
+                  onOpen={onOpen}
+                >
+                  {link}
+                </NavLink>
               ))}
             </Stack>
           </Box>
-        ) : null}
+        )}
       </Box>
     </>
   );
