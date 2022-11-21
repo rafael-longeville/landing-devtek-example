@@ -5,7 +5,7 @@ import {
   Text,
   Stack,
   Container,
-  Avatar,
+  Image,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
@@ -69,7 +69,7 @@ const TestimonialText = ({ children }) => {
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Avatar src={src} alt={name} mb={2} size="lg" />
+      <Image alt={name} src={src} borderRadius="50%" h="70px" w="70px" objectFit={"cover"}></Image>
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>

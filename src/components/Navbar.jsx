@@ -9,7 +9,7 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import Logo from "../assets/DevTekLogo.webp";
 
@@ -60,6 +60,7 @@ export default function Navbar() {
                 src={Logo}
                 h={{ base: "5vh" }}
                 w={{ base: "15vh" }}
+                alt="logo"
               ></Image>
             </Box>
             <HStack
