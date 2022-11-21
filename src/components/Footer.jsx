@@ -7,7 +7,7 @@ import {
   chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaTwitter, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 const SocialButton = ({
   children,
   label,
